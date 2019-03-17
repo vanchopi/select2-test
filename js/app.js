@@ -121,10 +121,10 @@ $(document).ready(function(){
 
 	// In your Javascript (external .js resource or <script> tag)
 
-	/* count selected https://bunchesdirect.com/catalog/
+	/* count selected https://bunchesdirect.com/catalog/ */
 	$('.search-single-select.filter-list-items.catalog-filter-list :selected').each(function(){		
-		console.log($(this).text());
-	})*/
+		let i = 0;if($(this).text() == ''){i++; console.log(i)}
+	})
 
 	$(document).on('click', '.read-more__bt' , function(){
 		$(this).closest('.row').children('.txt-cont').addClass('full')
