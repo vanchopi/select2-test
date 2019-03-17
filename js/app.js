@@ -126,6 +126,9 @@ $(document).ready(function(){
 		console.log($(this).text());
 	})*/
 
+	$(document).on('click', '.read-more__bt' , function(){
+		$(this).closest('.row').children('.txt-cont').addClass('full')
+	})
 
 	$(document).ready(function() {
 	    $('.js-example-basic-single').select2();
